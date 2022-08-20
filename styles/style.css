@@ -23,7 +23,7 @@
     max-width: 430px;
     color: #128C7E;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     /* position: absolute; */
     margin: auto;
     left: 0;
@@ -159,14 +159,14 @@ input[type='text']:focus {
     color: #E0B612;
 }
 
-.submit-btn {
+/* .submit-btn {
     border: none;
     margin-top: 20px;
     padding: 10px 120px;
     border-radius: 5px;
     background: #038475;
     color: #fff;
-}
+} */
 
 .notify {
     color: #fff;
@@ -188,11 +188,41 @@ input[type='text']:focus {
     margin-top: 10px;
 }
 
+/* Responsive  */
 
+@media only all and (max-width: 1300px) {
+    .display-no {
+        width: 100vw;
+        /* margin-top: 20px; */
+    }
+}
 
-
-@media only all and (max-width: 600px) {
+@media only all and (max-width: 600) {
     .display-no {
         width: 100%;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .calc-body {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media only all and (max-width: 375) {
+    .display-no {
+        width: 100%;
+        padding: 0px;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .calc-body {
+        position: fixed;
+        bottom: 0;
     }
 }
