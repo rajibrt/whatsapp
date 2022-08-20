@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Call & Message Without Saving Number</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .whatsapp-link {
+            display: none;
+            font-size: 30px;
+        }
+
+        .body-section {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="body-section text-white w-full">
+            <header class="py-6">
+                <img class="mx-auto" src="img/whatsapp-logo.svg" alt="">
+                <h1 class="text-lg text-center text-center pt-6">Whatsapp Call & Message Without Saving the Number
+                </h1>
+            </header>
+            <section>
+                <h2 class="whatsapp-link" id="w-link">https://wa.me/</h2>
+            </section>
+
+        </section>
+        <section class="p-10 bg-slate-200 flex items-center justify-center ">
+            <input id="number-field" class="shadow-inner p-2 h-10" type="text" placeholder="Write the mobile no">
+            <button id="btn-call" class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
+                Now</button>
+        </section>
+
+        <section>
+            <div class="container">
+                <div id="output"></div>
+                <div class="row">
+                    <div class="digit" id="one">1</div>
+                    <div class="digit" id="two">2
+                        <div class="sub">ABC</div>
+                    </div>
+                    <div class="digit" id="three">3
+                        <div class="sub">DEF</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="digit" id="four">4
+                        <div class="sub">GHI</div>
+                    </div>
+                    <div class="digit" id="five">5
+                        <div class="sub">JKL</div>
+                    </div>
+                    <div class="digit">6
+                        <div class="sub">MNO</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="digit">7
+                        <div class="sub">PQRS</div>
+                    </div>
+                    <div class="digit">8
+                        <div class="sub">TUV</div>
+                    </div>
+                    <div class="digit">9
+                        <div class="sub">WXYZ</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="digit">*
+                    </div>
+                    <div class="digit">0
+                    </div>
+                    <div class="digit">#
+                    </div>
+                </div>
+                <div class="botrow"><i class="fa fa-star-o dig" aria-hidden="true"></i>
+                    <div id="call"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <i class="fa fa-long-arrow-left dig" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
