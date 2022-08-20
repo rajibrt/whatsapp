@@ -8,6 +8,7 @@
     <title>Whatsapp Call & Message Without Saving Number</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         .whatsapp-link {
             display: none;
@@ -22,7 +23,7 @@
 
 <body>
     <main>
-        <section class="body-section text-white w-full">
+        <section class="body-section text-white">
             <header class="py-6">
                 <img class="mx-auto" src="img/whatsapp-logo.svg" alt="">
                 <h1 class="text-lg text-center text-center pt-6">Whatsapp Call & Message Without Saving the Number
@@ -33,13 +34,59 @@
             </section>
 
         </section>
-        <section class="p-10 bg-slate-200 flex items-center justify-center ">
-            <input id="number-field" class="shadow-inner p-2 h-10" type="text" placeholder="Write the mobile no">
-            <button id="btn-call" class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
-                Now</button>
+        <section class="p-4 bg-slate-200 flex items-center justify-center ">
+            <input id="number-field" class="shadow-inner w-full p-2" type="number"
+                placeholder="880 Mobile no with country code">
+            <!-- <button class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
+                Now</button> -->
         </section>
 
-        <section>
+        <!-- Dialing Pad -->
+
+        <section class="dial-pad">
+            <div class="w-full items-center justify-center">
+                <div class="input-section items-center justify-center ">
+                    <!-- <input class="form-control" type="text"> -->
+                    <div>
+                        <div class="calc-body">
+                            <div class="numbers">
+                                <section>
+                                    <div class="calc-button-row">
+                                        <div class="button">1</div>
+                                        <div class="button">2</div>
+                                        <div class="button">3</div>
+                                    </div>
+                                    <div class="calc-button-row">
+                                        <div class="button">4</div>
+                                        <div class="button">5</div>
+                                        <div class="button">6</div>
+                                    </div>
+                                    <div class="calc-button-row">
+                                        <div class="button">7</div>
+                                        <div class="button">8</div>
+                                        <div class="button">9</div>
+                                    </div>
+                                    <div class="calc-button-row">
+                                        <div class="button">&lt;</div>
+                                        <div class="button">0</div>
+                                        <div class="button">C</div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div>
+                                <button id="btn-call" type="submit"
+                                    class="w-full font-bold submit-btn text-white py-2 px-4 bg-teal-500 h-10">CALL NOW /
+                                    MESSAGE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section>
             <div class="container">
                 <div id="output"></div>
                 <div class="row">
@@ -86,7 +133,7 @@
                     <i class="fa fa-long-arrow-left dig" aria-hidden="true"></i>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <script src="app.js"></script>
 </body>

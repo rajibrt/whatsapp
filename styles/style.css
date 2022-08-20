@@ -1,128 +1,154 @@
 * {
+    box-sizing: border-box;
     margin: 0;
-    border: 0;
 }
 
-body {
-    background-color: #42a5f5;
-}
-
-.row {
-    margin: 0 auto;
-    width: 280px;
-    clear: both;
+.dial-pad {
+    width: 100%;
+    justify-content: baseline;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
     text-align: center;
-    font-family: 'Exo';
+    padding: 10px;
+    /* position: relative; */
 }
 
-.digit,
-.dig {
-    float: left;
-    padding: 10px 30px;
-    width: 30px;
-    font-size: 2rem;
-    cursor: pointer;
+.numbers {
+    align-items: center;
+    justify-content: center;
+
 }
 
-.sub {
-    font-size: 0.8rem;
-    color: grey;
+.calc-body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
 }
+
+/* 
+body {
+    background: #10101B;
+    height: 100vh;
+} */
 
 .container {
-    background-color: white;
-    width: 320px;
-    padding: 20px;
-    margin: 30px auto;
-    height: 420px;
-    text-align: center;
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    margin-top: 30px;
 }
 
-#output {
-    font-family: "Exo";
-    font-size: 2rem;
-    height: 60px;
+.half-width {
+    height: 570px;
+    background: #222436;
+    padding: 30px;
+    text-align: center;
+}
+
+.generate-btn {
+    margin-top: 140px;
+    width: 180px;
+    padding: 50px;
+    border-radius: 50%;
+    border: 8px solid #39458C;
+    background-color: #495BC3;
+    color: #ffffff;
     font-weight: bold;
-    color: #1976d2;
-}
-
-#call {
-    display: inline-block;
-    background-color: #66bb6a;
-    padding: 4px 30px;
-    margin: 10px;
-    color: white;
-    border-radius: 4px;
-    float: left;
-    cursor: pointer;
-}
-
-.botrow {
-    margin: 0 auto;
-    width: 280px;
-    clear: both;
+    font-size: 20px;
     text-align: center;
-    font-family: 'Exo';
 }
 
-.digit:active,
-.dig:active {
-    background-color: #e6e6e6;
+.generate-btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
-#call:hover {
-    background-color: #81c784;
+input[type='text'] {
+    background-color: #e2e2e2;
+    padding: 10px 0px;
+    color: #128C7E;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid #858299; */
+    height: 50px;
+    padding: 10px;
 }
 
-.dig {
-    float: left;
-    padding: 10px 20px;
-    margin: 10px;
-    width: 30px;
+input[type='text']:focus {
+    background-color: #e2e2e2;
+    color: #128C7E;
+    font-size: 20px;
+}
+
+
+.calc-body {
+    margin: 30px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.calc-typed {
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+}
+
+.calc-button-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 40%;
+    background: #425062;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #6c6c6c;
+    margin-right: -4px;
+    /* border-radius: 10px; */
     cursor: pointer;
 }
 
-/* Responsive  */
-@media only all and (max-width: 1300px) {
-    .weatherforcastbox {
-        display: none;
-    }
-
+.blink-me {
+    color: #E0B612;
 }
 
-@media only all and (max-width: 1200px) {
-    .collumn {
-        width: 31%;
-    }
-
+.submit-btn {
+    border: none;
+    margin-top: 20px;
+    padding: 10px 120px;
+    border-radius: 5px;
+    background: #495BC3;
+    color: #fff;
 }
 
-@media only all and (max-width: 900px) {
-    .collumn {
-        width: 47%;
-    }
-
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
 }
 
-@media only all and (max-width: 600px) {
-    .collumn {
-        width: 100%;
-    }
+.notify-section {
+    width: 35%;
+    margin: 0 auto;
+}
 
-    .collumn+.collumn {
-        border-left: none;
-        border-bottom: 1px solid #2f2f2f;
-    }
-
-    header {
-        /* max-width: 320px; */
-        color: white;
-        font-size: 16px;
-        text-align: center;
-        line-height: 54px;
-        overflow: hidden;
-
-    }
-
+.action-left {
+    color: #FF3C5F;
+    margin-top: 10px;
 }
