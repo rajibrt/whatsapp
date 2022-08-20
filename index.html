@@ -9,42 +9,36 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        .whatsapp-link {
-            display: none;
-            font-size: 30px;
-        }
 
-        .body-section {
-            background-color: #128C7E;
-        }
-    </style>
 </head>
 
 <body>
     <main>
-        <section class="body-section text-white">
-            <header class="py-6">
+        <section class="body-section">
+            <header class="py-2">
                 <img class="mx-auto" src="img/whatsapp-logo.svg" alt="">
-                <h1 class="text-lg text-center text-center pt-6">Whatsapp Call & Message Without Saving the Number
-                </h1>
+
             </header>
             <section>
                 <h2 class="whatsapp-link" id="w-link">https://wa.me/</h2>
             </section>
 
         </section>
-        <section class="display">
-            <input id="typed-numbers" class="display-no" type="number" placeholder="880... ">
-            <!-- <button class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
+        <!-- <section class="display mb-10">
+            <input id="typed-numbers" class="display-no" type="number" placeholder="880... "> -->
+        <!-- <button class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
                 Now</button> -->
-        </section>
+        <!-- </section> -->
 
         <!-- Dialing Pad -->
 
         <section class="dial-pad">
             <div class="w-full items-center justify-center">
                 <div class="input-section items-center justify-center ">
+                    <input id="typed-numbers" class="display-no mt-8" type="number" placeholder="880... ">
+                    <h1 class="text-lg text-teal-500 text-center text-center pt-6">Whatsapp Call & Message Without
+                        Saving the Number
+                    </h1>
                     <!-- <input class="form-control" type="text"> -->
                     <div>
                         <div class="calc-body">
@@ -75,7 +69,7 @@
 
                             <div>
                                 <button id="btn-call" type="submit"
-                                    class="w-full font-bold submit-btn text-white py-2 px-4 bg-teal-500 h-10">CALL NOW /
+                                    class="w-full font-bold submit-btn text-white py-2 px-4 bg-teal-500 h-16">CALL NOW /
                                     MESSAGE</button>
                             </div>
                         </div>
