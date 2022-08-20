@@ -1,5 +1,5 @@
 document.getElementById('btn-call').addEventListener('click', function () {
-    const numberFieldElement = document.getElementById('number-field')
+    const numberFieldElement = document.getElementById('typed-numbers')
     const numberFieldString = numberFieldElement.value;
     const numberField = parseInt(numberFieldString);
 
