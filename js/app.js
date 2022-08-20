@@ -6,8 +6,15 @@ document.getElementById('btn-call').addEventListener('click', function () {
     const whatsappLinkElement = document.getElementById('w-link');
     const whatsappLink = whatsappLinkElement.innerText;
 
-    const callNow = 'https://wa.me/' + numberField;
-    window.open(callNow, '_blank')
+    if (numberFieldString == '') {
+        alert('Please enter mobile no');
+        return;
+    }
+    else {
+        const callNow = 'https://wa.me/' + numberField;
+        window.open(callNow, '_blank')
+    }
 
 
 })
+

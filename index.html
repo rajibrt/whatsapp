@@ -8,81 +8,70 @@
     <title>Whatsapp Call & Message Without Saving Number</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c3454a088d.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body>
-    <main>
-        <section class="body-section">
-            <header class="py-2">
-                <img class="mx-auto" src="img/whatsapp-logo.svg" alt="">
-
+    <main class="all-content">
+        <section class="page-content">
+            <header>
+                <img src="img/whatsapp-logo.svg" alt="">
             </header>
             <section>
                 <h2 class="whatsapp-link" id="w-link">https://wa.me/</h2>
             </section>
+            <!-- Display -->
+            <div>
+                <input class="display-digit" id="typed-numbers" type="number" placeholder="880... ">
+            </div>
+            <!-- Messages -->
+            <div class="message">
+                <h2 class="text-xl md:text-3xl lg:text-2xl text-teal-500 text-center text-center pt-1">Whatsapp Call
+                    &
+                    Message Without
+                    Saving the Number
+                </h2>
+                <h3 class="text-base md:text-3xl lg:text-lg text-yellow-500 text-center text-center pb-0">(Need
+                    Help?
+                    Whatsapp:
+                    880 1711 380 679)
+                </h3>
+            </div>
 
         </section>
-        <!-- <section class="display mb-10">
-            <input id="typed-numbers" class="display-no" type="number" placeholder="880... "> -->
-        <!-- <button class="text-white py-2 px-4 bg-teal-500 h-10">Call/Message
-                Now</button> -->
-        <!-- </section> -->
-
-        <!-- Dialing Pad -->
-
-        <section class="dial-pad">
-            <div class="w-full items-center justify-center">
-                <div class="input-section items-center justify-center ">
-                    <input id="typed-numbers" class="display-no" type="number" placeholder="880... ">
-                    <h1 class="text-xl md:text-3xl lg:text-2xl text-teal-500 text-center text-center pt-1">Whatsapp Call
-                        &
-                        Message Without
-                        Saving the Number
-                    </h1>
-                    <h1 class="text-base md:text-3xl lg:text-lg text-yellow-500 text-center text-center pb-0">(Need
-                        Help:
-                        Whatsapp:
-                        880 1711 380 679)
-                    </h1>
-                    <!-- <input class="form-control" type="text"> -->
-                    <div>
-                        <div class="calc-body">
-                            <div class="numbers">
-                                <div id="calculator">
-                                    <div class="calc-button-row">
-                                        <div class="button">1</div>
-                                        <div class="button">2</div>
-                                        <div class="button">3</div>
-                                    </div>
-                                    <div class="calc-button-row">
-                                        <div class="button">4</div>
-                                        <div class="button">5</div>
-                                        <div class="button">6</div>
-                                    </div>
-                                    <div class="calc-button-row">
-                                        <div class="button">7</div>
-                                        <div class="button">8</div>
-                                        <div class="button">9</div>
-                                    </div>
-                                    <div class="calc-button-row">
-                                        <div class="button">&lt;</div>
-                                        <div class="button">0</div>
-                                        <div class="button">C</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button id="btn-call" type="submit"
-                                    class="w-full font-bold submit-btn text-white py-2 px-4 bg-teal-500 h-16">CALL
-                                    NOW
-                                    or
-                                    MESSAGE</button>
-                            </div>
+        <section class="bottom-section">
+            <!-- Dial Pad -->
+            <div>
+                <div class="numbers">
+                    <div id="calculator">
+                        <div class="calc-button-row">
+                            <div class="button">1</div>
+                            <div class="button">2</div>
+                            <div class="button">3</div>
+                        </div>
+                        <div class="calc-button-row">
+                            <div class="button">4</div>
+                            <div class="button">5</div>
+                            <div class="button">6</div>
+                        </div>
+                        <div class="calc-button-row">
+                            <div class="button">7</div>
+                            <div class="button">8</div>
+                            <div class="button">9</div>
+                        </div>
+                        <div class="calc-button-row">
+                            <div class="button">&lt;</div>
+                            <div class="button">0</div>
+                            <div class="button">C</div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- End of Dial Pad -->
+            <div>
+                <button id="btn-call" type="submit" class="call-btn"><i class="fa-solid fa-phone"></i> Call/Message
+                </button>
             </div>
         </section>
     </main>

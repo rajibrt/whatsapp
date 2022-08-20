@@ -1,6 +1,15 @@
 * {
-    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+.page-content {
+    position: relative;
 }
 
 .whatsapp-link {
@@ -8,91 +17,42 @@
     font-size: 30px;
 }
 
-.body-section {
-    background-color: #128C7E;
-    width: 100vw;
-    margin: 0;
-    padding: 0
-}
-
-.display {
-    background-color: #4674b0;
-}
-
-.display-no {
+.all-content {
     max-width: 430px;
-    color: #128C7E;
-    text-align: center;
-    /* padding: 10px; */
-    /* position: absolute; */
-    margin: auto;
-    left: 0;
-    right: 0;
-    border: 1px solid #9d9d9d;
-    -webkit-box-shadow: inset 0 0 10px #c0c0c0;
-    font-size: 2em;
-    font-weight: 500;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
 
 }
 
-.dial-pad {
-    max-width: 430px;
-    /* justify-content: baseline; */
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    color: white;
-    text-align: center;
-    /* position: absolute; */
-    margin: auto;
-    left: 0;
-    right: 0;
-    /* position: relative; */
-}
-
-.numbers {
-    align-items: center;
-    justify-content: center;
-
-}
-
-.calc-body {
+header {
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    /* position: relative; */
+    background-color: #128C7E;
+    padding: 4px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* 
-body {
-    background: #10101B;
-    height: 100vh;
-} */
-
-.container {
-    margin-top: 30px;
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.half-width {
-    height: 570px;
-    background: #222436;
-    padding: 30px;
+.display-digit {
+    width: 100%;
+    background-color: #B9C4B4;
+    padding: 0;
+    font-size: 1.8em;
+    height: 60px;
     text-align: center;
+    color: #474742;
+    border: none;
 }
 
-/* .generate-btn {
-    margin-top: 140px;
-    width: 180px;
-    padding: 50px;
-    border-radius: 50%;
-    border: 8px solid #39458C;
-    background-color: #495BC3;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-} */
+/* Dial Pad Design  */
 
 .generate-btn:focus {
     outline: none;
@@ -150,7 +110,7 @@ input[type='text']:focus {
     text-align: center;
     vertical-align: middle;
     border: 1px solid #4c5c71;
-    margin-right: -4px;
+    /* margin-right: -4px; */
     /* border-radius: 10px; */
     cursor: pointer;
 }
@@ -159,14 +119,7 @@ input[type='text']:focus {
     color: #E0B612;
 }
 
-/* .submit-btn {
-    border: none;
-    margin-top: 20px;
-    padding: 10px 120px;
-    border-radius: 5px;
-    background: #038475;
-    color: #fff;
-} */
+
 
 .notify {
     color: #fff;
@@ -188,41 +141,35 @@ input[type='text']:focus {
     margin-top: 10px;
 }
 
-/* Responsive  */
+/* message */
 
-@media only all and (max-width: 1300px) {
-    .display-no {
-        width: 100vw;
-        /* margin-top: 20px; */
-    }
+.message,
+h2 {
+    text-align: center;
+    color: #038475;
 }
 
-@media only all and (max-width: 600) {
-    .display-no {
-        width: 100%;
-        padding: 0px;
-        position: fixed;
-        top: 0;
-
-    }
-
-    .calc-body {
-        position: fixed;
-        bottom: 0;
-    }
+.message,
+h3 {
+    text-align: center;
+    color: #038475;
 }
 
-@media only all and (max-width: 375) {
-    .display-no {
-        width: 100%;
-        padding: 0px;
-        position: fixed;
-        top: 0;
+/* Bottom Section */
+.bottom-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
-    }
-
-    .calc-body {
-        position: fixed;
-        bottom: 0;
-    }
+/* Call Button */
+.call-btn {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background: #038475;
+    color: #fff;
+    padding: 10px 0px;
+    height: 60px;
 }
