@@ -22,7 +22,7 @@ marquee {
 
 marquee h3 {
     color: white;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .scroll {
@@ -31,7 +31,7 @@ marquee h3 {
 
 .help a {
     /* border: 1px solid greenyellow; */
-    padding: 3px 6px;
+    padding: 8px 6px;
     background: #128C7E;
     text-decoration: none;
     color: #ffffff;
